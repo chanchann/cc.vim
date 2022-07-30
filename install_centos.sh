@@ -1,17 +1,17 @@
 #!/bin/bash
 
 echo "----------------install curl----------------"
-sudo apt-get install curl -y
+sudo yum install curl -y
 
 echo "----------------install nvim----------------"
-sudo apt-get install neovim -y
+sudo yum install neovim -y
 
 echo "----------------install ctags----------------"
-sudo apt-get install ctags -y
+sudo yum install ctags -y
 
 echo  "----------------install coc.vim----------------"
 sudo curl -sL install-node.vercel.app/lts | bash -y
-sudo apt-get install ccls -y 
+sudo yum install ccls -y 
 cd ~/.config/nvim/plugged/coc.nvim
 sudo npm install
 
