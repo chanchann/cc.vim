@@ -1,18 +1,18 @@
 #!/bin/sh
 
 echo "----------------install curl----------------"
-apt-get install curl
+apt-get install curl -y
 
 echo "----------------install nvim----------------"
-apt-get install neovim
+apt-get install neovim -y
 
 echo "----------------install ctags----------------"
-apt-get install install ctags
+apt-get install ctags -y
 
 echo  "----------------install coc.vim----------------"
 curl -sL install-node.vercel.app/lts | bash
-apt-get install ccls
-apt-get install yarn
+apt-get install ccls -y 
+apt-get install yarn -y 
 
 echo  "----------------install fzf---------------"
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
