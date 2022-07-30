@@ -64,3 +64,11 @@ ctrl + f to open the file list
 ctrl + t to open the tags
 
 ![tags](./asset/05_tag.png)
+
+6. Code completion 
+
+![completion](./asset/06_complate.png)
+
+7. Format
+
+Copy .clang-format to you project root
