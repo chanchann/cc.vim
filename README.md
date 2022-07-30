@@ -1,4 +1,4 @@
-# Steps
+# Configure Steps
 
 1. clone this repo
 
@@ -26,39 +26,7 @@ nvim
 :PlugInstall
 ```
 
-4. configure ccls
-
-First Open nvim
-
-```
-nvim 
-
-:CocConfig
-```
-
-Then copy coc-settings.json
-
-```
-{
-  "languageserver": {
-    "ccls": {
-      "command": "ccls",
-      "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
-      "rootPatterns": [".ccls-root", "compile_commands.json"],
-      "initializationOptions": {
-        "cache": {
-          "directory": ".ccls-cache"
-        },
-        "client": {
-          "snippetSupport": true
-        }
-      }
-    }
-  }
-}
-```
-
-5. ccls for your project(cmake)
+4. ccls for your project(cmake)
 
 ```
 mkdir build && cd build
@@ -66,3 +34,33 @@ cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=On ..
 cd ..
 ln -s build/compile_commands.json
 ```
+
+## Introduction
+
+1. Beautiful UI
+
+![ui](./asset/01_theme.png)
+
+2. File Manager
+
+ctrl + p to find files quickly
+
+![file](./asset/02_file.png)
+
+3. Text Search
+
+:Ag or :Rg 
+
+![search](./asset/03_search.png)
+
+4. File list
+
+ctrl + f to open the file list
+
+![filelist](./asset/04_file_list.png)
+
+5. Tags
+
+ctrl + t to open the tags
+
+![tags](./asset/05_tag.png)
