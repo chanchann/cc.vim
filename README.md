@@ -26,13 +26,29 @@ nvim
 :PlugInstall
 ```
 
-4. ccls for your project(cmake)
+4. ccls for your project
+
+The key is to generate compile_commands.json for your project
+
+- For cmake : 
 
 ```
 mkdir build && cd build
 cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=On ..
 cd ..
 ln -s build/compile_commands.json
+```
+
+or add in your CMakeList.txt
+
+```cpp
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+```
+
+For blade: 
+
+```
+blade dump --compdb --to-file compile_commands.json
 ```
 
 ## Introduction

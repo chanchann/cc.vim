@@ -368,7 +368,7 @@ set fileencodings=ucs-bom,utf-8,cp936
 set fileencoding=utf-8
 set updatetime=300
 set shortmess+=c
-set signcolumn=yes
+set signcolumn=no
 
 " autocmd FileType json syntax match Comment +\/\/.\+$+
 
