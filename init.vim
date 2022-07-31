@@ -56,8 +56,8 @@ nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 " 设置切换tab的快捷键 <\> + <-> 切换到前一个 tab
 nmap <leader>- <Plug>AirlineSelectPrevTab
-" 设置切换tab的快捷键 <\> + <+> 切换到后一个 tab
-nmap <leader>+ <Plug>AirlineSelectNextTab
+" 设置切换tab的快捷键 <\> + <=> 切换到后一个 tab
+nmap <leader>= <Plug>AirlineSelectNextTab
 " 设置切换tab的快捷键 <\> + <q> 退出当前的 tab
 nmap <leader>q :bp<cr>:bd #<cr>
 " 修改了一些个人不喜欢的字符
