@@ -16,14 +16,15 @@ Plug 'junegunn/fzf.vim'
 Plug 'rhysd/vim-clang-format'
 call plug#end()
 
+" Yggdroot/indentLine config
 let g:indent_guides_guide_size            = 1  " 指定对齐线的尺寸
 let g:indent_guides_start_level           = 2  " 从第二层开始可视化显示缩进
 
-" 开启语法高亮
+" crusoexia/vim-monokai config
 syntax on
-" 主题选用monokai
 colorscheme monokai
 
+" vim-airline/vim-airline config
 " 设置状态栏
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_alt_sep = '|'
@@ -72,6 +73,7 @@ let g:airline_symbols.readonly = "RO"
 let g:airline_symbols.dirty = "DT"
 let g:airline_symbols.crypt = "CR" 
 
+" scrooloose/nerdcommenter config
 "add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 " python 自动的会多加一个空格
@@ -98,6 +100,12 @@ let g:NERDTrimTrailingWhitespace = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 
+// ctrl + _ to comment
+imap <C-_> <Esc><leader>c<Space>a
+map <C-_> <Leader>c<Space>
+vmap <C-_> <Leader>c<Space>
+
+" luochen1990/rainbow config
 let g:rainbow_active = 1
 let g:rainbow_conf = {
 \   'guifgs': ['darkorange3', 'seagreen3', 'royalblue3', 'firebrick'],
@@ -122,6 +130,8 @@ let g:rainbow_conf = {
 \   }
 \}
 
+" preservim/nerdtree config
+" Xuyuanp/nerdtree-git-plugin
 " autocmd vimenter * NERDTree  "自动开启Nerdtree
 let g:NERDTreeWinSize = 25 "设定 NERDTree 视窗大小
 let NERDTreeShowBookmarks=1  " 开启Nerdtree时自动显示Bookmarks
@@ -140,9 +150,11 @@ let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 nnoremap <C-f> :NERDTreeToggle<CR> " 开启/关闭nerdtree快捷键
 
+" majutsushi/tagbar config
 let g:tagbar_width=30
 nnoremap <silent> <C-t> :TagbarToggle<CR> " 将tagbar的开关按键设置为 ctrl t
 
+" octol/vim-cpp-enhanced-highlight config
 "cpp-enhanced-highlight
 "高亮类，成员函数，标准库和模板
 let g:cpp_class_scope_highlight = 1
