@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "----------------install git----------------"
+sudo apt-get install git -y
+
 echo "----------------install curl----------------"
 sudo apt-get install curl -y
 
@@ -9,8 +12,11 @@ sudo apt-get install neovim -y
 echo "----------------install ctags----------------"
 sudo apt-get install ctags -y
 
+echo "----------------install npm----------------"
+sudo apt-get install npm -y
+
 echo  "----------------install coc.vim----------------"
-sudo curl -sL install-node.vercel.app/lts | bash -y
+sudo curl -sL install-node.vercel.app/lts | bash -y 
 sudo apt-get install ccls -y 
 cd ~/.config/nvim/plugged/coc.nvim
 sudo npm install
