@@ -3,13 +3,15 @@
 1. clone this repo
 
 ```
-git clone https://github.com/chanchann/vim_config.git
+git clone https://github.com/chanchann/cc.vim.git
 ```
 
 2. run instsall script
 
 ```
-cd vim_config
+cd cc.vim
+
+sudo apt update
 
 chmod +x install.sh
 

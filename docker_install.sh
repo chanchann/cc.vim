@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "----------------install git----------------"
+apt-get install git -y
+
 echo "----------------install curl----------------"
 apt-get install curl -y
 
